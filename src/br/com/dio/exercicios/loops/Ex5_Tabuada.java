@@ -15,6 +15,21 @@ Tabuada de 5:
 5 X 10 = 50
 */
 public class Ex5_Tabuada {
-
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        int numero;
+        int mult;
+        
+        System.out.println("Digite a tabuada gostaria de ver?");
+        numero = scan.nextInt();
+        
+        
+        for(int i = 1; i<=10; i++){
+            mult = numero * i;
+            System.out.println("Tabuada do: " + numero);
+            System.out.println(numero + " x " + i + " = " + mult );
+        }
+    }
 
 }
